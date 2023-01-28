@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(45deg, rgb(121, 127, 244), rgb(22, 8, 128));
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.myForm {
+    min-height: 30vh;
+    min-width: 30vw;
+
+    background-image: linear-gradient(45deg, rgb(232, 69, 151), rgb(235, 51, 51));
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myForm label {
+    color: rgb(230,230,230);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.myForm input {
+    min-height: 2rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgb(157, 154, 255);
+    outline: none;
+
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    color: rgb(230,230,230);
+}
+
+input::selection {
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.myForm button {
+    padding: 10px;
+    margin: 5px;
+    height: 2rem;
+    min-width: 4rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(148, 148, 255);
+    transition: all 0.3s ease;
+}
+
+.myForm button:hover {
+    background-color: rgb(130, 130, 224);
+}
+    </style>
+</head>
+<body>
+    <form class="myForm" action="/" method="post">
+    <label for="cityName">City Name: </label>
+    <input id="cityName" type="text" name="cityName">
+    <button type="submit">Go</button>
+    </form>
+</body>
+</html>
